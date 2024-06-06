@@ -1,0 +1,18 @@
+﻿<Window x:Class="Prog_Lang_Score.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prog_Lang_Score"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="543" Width="975">
+    <Grid Background="#FFD1F3F3">
+        <Label Content="Choose language:" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.386,-0.332" Width="113" FontFamily="Times New Roman" FontSize="14"/>
+        <Label Content="From 0 to 100 how much would you recommend it for your enemy:" HorizontalAlignment="Left" Margin="20,52,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.386,-0.332" Width="391" FontFamily="Times New Roman" FontSize="14"/>
+        <TextBox x:Name="TextUser" HorizontalAlignment="Left" Margin="416,56,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="154" Height="22" FontFamily="Times New Roman" FontSize="14" PreviewKeyDown="TextUser_PreviewKeyDown" PreviewTextInput="NumberValidationTextUser" MaxLength="3" CommandManager.PreviewExecuted="TextUser_PreviewExecuted" ContextMenu="{x:Null}"/>
+        <Button Content="Submit" HorizontalAlignment="Left" Margin="30,93,0,0" VerticalAlignment="Top" Width="233" Click="Submit_Button" Height="25"/>
+        <ComboBox x:Name="ChooseLanguage" Margin="138,14,694,0" VerticalAlignment="Top" Width="143" Height="22" IsReadOnly="True" FontFamily="Times New Roman" FontSize="14" AutomationProperties.IsColumnHeader="True"/>
+        <DataGrid x:Name="DataGridView" Margin="0,159,0,0" FontFamily="Times New Roman" FontSize="14" AutoGenerateColumns="True" IsReadOnly="True"/>
+
+    </Grid>
+</Window>
